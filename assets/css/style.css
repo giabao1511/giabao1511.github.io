@@ -64,6 +64,7 @@ html {
     cursor: pointer;
     border: none;
     margin-left: -8px;
+    -webkit-appearance: none;
 }
 
 .btn:hover{
@@ -177,7 +178,7 @@ html {
 #slider {
     margin-top: 46.4px;
     padding-top: 65%;
-    background: url('/assets/img/slider1.jpg') bottom center / cover no-repeat;
+    background: url('../img/slider1.jpg') bottom center / cover no-repeat;
     position: relative;
     max-width: 100%;
     color: #fff;
@@ -191,8 +192,9 @@ html {
 
 #slider .text-content #text-description {
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 16px;
     font-family: cursive;
+    font-weight: 600;
 }
 
 #content {
@@ -218,10 +220,11 @@ html {
 
 #content .section-sub-heading {
     margin-bottom: 25px;
-    font-size: 17px;
+    font-size: 16px;
     font-family: cursive;
     font-style: italic;
     opacity: 0.7;
+    font-weight: 600;
 }
 
 #content #about-description {
@@ -343,7 +346,7 @@ html {
     background-color: #fff;
     width: 900px;
     max-width: calc(100% - 32px);
-    min-height: 350px;
+    max-height: 100%;
     position: relative;
     animation: modalFadeIn ease 0.8s;
 }
@@ -384,6 +387,7 @@ html {
     color: #fff;
     font-size: 18px;
     border: 1px solid #fff;
+    border-radius: 4px;
 }
 
 #buy-tickets:hover {
@@ -396,7 +400,7 @@ html {
     position: absolute;
     right: 0;
     top: 0;
-    padding: 10px;
+    padding: 15px;
     color: #fff;
 }
 
@@ -461,7 +465,7 @@ html {
 
 #footer {
     padding: 64px 16px;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .social-icons a{

@@ -7,10 +7,15 @@
 @media screen and (max-width: 63.9375em){
     .contact-form .form-control {
         padding: 15px;
+        font-size: 16px;
     }
 
     .copyright {
         padding: 0 8px;
+        font-size: 18px;
+    }
+
+    .contact-submit-btn {
         font-size: 18px;
     }
 }
