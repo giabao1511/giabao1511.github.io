@@ -6,6 +6,7 @@ var header = document.querySelector('#header')
 var menuBtn = document.querySelector('.js-menu-btn')
 var menuLiElements = document.querySelectorAll('.js-nav-mobile')
 var subNav = document.getElementById('js-sub-nav')
+var slides = document.querySelectorAll('.js-slide')
 
 function showModal() {
     modal.classList.add('open-modal')
@@ -33,3 +34,23 @@ modalContainer.addEventListener('click', function(event){
 menuBtn.onclick = function() {
     header.classList.toggle('open-menu-btn');
 }
+
+var slideIndex = 0;
+
+function showSlides() {
+    for(var i = 0; i < slides.length; i++){
+        slides[i].style.display = 'none';
+    }
+    slideIndex++;
+    if(slideIndex > slides.length){
+        slideIndex = 1;
+    }
+    slides[slideIndex - 1].style.display = 'block';
+    setTimeout(showSlides, 3000) // thay đổi slide sau 3s
+}
+
+showSlides();
+
+
+
+

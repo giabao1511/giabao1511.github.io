@@ -18,6 +18,10 @@
     .contact-submit-btn {
         font-size: 18px;
     }
+
+    #music-player {
+        background-size: 0 0;
+    }
 }
 
 /* Mobile */
